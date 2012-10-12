@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.password">ABROS_OWNER</property>
+        <property name="hibernate.connection.release_mode">auto</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@actdev01:1521:DEV10G</property>
+        <property name="hibernate.connection.username">ABROS_OWNER</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.ejb.discard_pc_on_close">false</property>
+        <property name="hibernate.query.jpaql_strict_compliance">true</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.transaction.factory_class">org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory</property>
+        <property name="hibernate.transaction.flush_before_completion">false</property>
+        <property name="hibernate.use_identifier_rollback">false</property>
+        <mapping class="com.github.aruizca.service.db.entity.LookupTypeEntity" />
+        <mapping class="com.github.aruizca.service.db.entity.UserDetailEntity" />
+        <mapping class="com.github.aruizca.service.db.entity.UserEntity" />
+        <mapping class="com.github.aruizca.service.db.entity.RoleEntity" />
+        <mapping class="com.github.aruizca.service.db.entity.LookupValueEntity" />
+    </session-factory>
+</hibernate-configuration>

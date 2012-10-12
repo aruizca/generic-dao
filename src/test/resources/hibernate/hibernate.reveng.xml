@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-schema="ABROS_OWNER" match-name=".*"></table-filter>
+	<table schema="ABROS_OWNER" name="USERS" class="com.github.aruizca.service.db.entity.UserEntity">
+
+	</table>
+	<table schema="ABROS_OWNER" name="USER_ROLE" class="com.github.aruizca.service.db.entity.UserRoleEntity">
+
+	</table>
+	<table schema="ABROS_OWNER" name="ROLE" class="com.github.aruizca.service.db.entity.RoleEntity">
+
+	</table>
+	<table schema="ABROS_OWNER" name="USER_DETAIL" class="com.github.aruizca.service.db.entity.UserDetailEntity">
+
+	</table>
+	<table schema="ABROS_OWNER" name="LOOKUP_TYPE" class="com.github.aruizca.service.db.entity.LookupTypeEntity">
+
+	</table>
+	<table schema="ABROS_OWNER" name="LOOKUP_VALUE" class="com.github.aruizca.service.db.entity.LookupValueEntity">
+
+	</table>
+</hibernate-reverse-engineering>
